@@ -1,0 +1,6 @@
+<p>{{'Server'}} Id : {{serverId}} and Server Status = {{getServerStatus()}}
+<input type="text" class="form-control" [(ngModel)]="serverName"/>
+  <button class="btn btn-primary" [disabled] = "!allowNewServer"  (click) = "onServerClicked();">Add Server</button>
+  <p>{{serverEventClicked}}</p>
+
+  <p>{{serverName}}</p>
